@@ -1,0 +1,35 @@
+{
+  "name": "mern-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:server": "cross-env NODE_ENV=development nodemon index.js",
+    "start:client": "npm run start --prefix client",
+    "start:dev": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "reactjs",
+    "mongodb",
+    "mongoose",
+    "redux",
+    "javascript",
+    "boilerplate"
+  ],
+  "author": "Hakim Raissi",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.13"
+  }
+}
